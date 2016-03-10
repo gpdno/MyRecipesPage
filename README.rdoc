@@ -18,7 +18,7 @@ chefname: String
 email: String
 
 - chefname must be present
-  between 5 and 30 charactures
+  between 3 and 30 charactures
   
 - email must be present
   email must be unique (used as login)
