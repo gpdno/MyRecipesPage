@@ -47,6 +47,7 @@ h1 {
   font-size: 3em;
   letter-spacing: -2px;
   margin-bottom: 30px;
+  color: #5f7aa0;
 }
 
 h2 {
@@ -59,12 +60,6 @@ h2 {
 .left {
   text-align: left;
   letter-spacing: .5px;
-}
-
-.footer {
-  margin-top: 20px;
-  border-top: 1px solid #eaeaea;
-  color: #777;
 }
 
 .chef_info {
@@ -88,4 +83,83 @@ input, textarea, select, .uneditable-input {
 
 input {
   height: auto !important;
+}
+
+.jumbotron {
+  color: #5f7aa0;
+}
+
+/* -------------------- */
+/* footer section */
+/* -------------------- */
+
+footer {
+    background: #333;
+    padding: 20px;
+}
+
+.footer-nav {
+    font-size: 65%;
+    list-style: none;
+    float: left;
+}
+
+.social-links {
+    list-style: none;
+    float: right;
+}
+
+.footer-nav li,
+.social-links li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+footer p {
+    color: #fff;
+    font-size: 60%;
+    letter-spacing: .5px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.footer-nav li:last-child,
+.social-links li:last-child {
+    margin-right: 0;
+}
+
+.footer-nav li a:link,
+.footer-nav li a:visited,
+.social-links li a:link,
+.social-links li a:visited {
+    color: #b1b1b1;
+    text-decoration: none;
+    border-bottom: hidden;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.footer-nav li a:hover,
+.footer-nav li a:active, {
+    color: #924d10;
+    text-decoration: none;
+    border-bottom: 1px solid #e67e22;
+    padding-bottom: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.ion-social-facebook:hover {
+    color: #3b5998;
+}
+
+.ion-social-twitter:hover {
+    color: #00aced;
+    
+}
+.ion-social-googleplus:hover {
+    color: #dd4b39;
+}
+
+.ion-social-instagram:hover {
+    color: #517fa4;
 }
