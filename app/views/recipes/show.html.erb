@@ -8,7 +8,9 @@
     </p>
   </div>
   <div class='col-md-8'>
+    <% if logged_in? && @recipe.chef == current_user %>
     <%= link_to "Edit", edit_recipe_path, class: "btn btn-success pull-right" %>
+    <% end %>
    <h4> <%= @recipe.summary %> </h4>
    <div class="show_recipe">
      <%= image_tag(@recipe.picture.url, size: "350x250", class: "gravatar") if @recipe.picture? %>
