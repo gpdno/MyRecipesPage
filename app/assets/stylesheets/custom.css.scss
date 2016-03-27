@@ -1,14 +1,23 @@
-$navbar-default-bg:#555;
+$navbar-default-bg:#ffd26e;
 $light-orange: #ff8c00;
 $navebar-default-color: $light-orange;
-$header-default-bg:#555;
+$header-default-bg:#ffd26e;
 
 // "bootstrap-sprockets" must be imported before "bootstrap" and "bootstrap/variables"
 @import "bootstrap-sprockets";
 @import "bootstrap";
 
+html {
+    background-color: #fff;
+    color: #7c7c7c;
+    font-family: 'Lato', 'Arial', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+}
+
 header {
-    background-color: #555;
+    background-color: #e67e22;
     background-size: cover;
     background-position: center;
     height: 100vh;
@@ -20,7 +29,11 @@ header {
 }
 
 body {
-  padding-top: 90px;
+  padding-top: 0;
+}
+
+.navbar-header {
+  color: #ffd26e;
 }
 
 .nav_item {
@@ -38,13 +51,15 @@ h1, h2, h3, h4, h5 {
 
 h1 {
   font-size: 2em;
+  font-weight: 200;
   letter-spacing: -2px;
   margin-bottom: 30px;
   color: #5f7aa0;
 }
 
 h2 {
-  font-size: 1.3em;
+  font-size: 1.5em;
+  font-weight: 200;
   margin-bottom: 30px;
   font-weight: normal;
   color: #777;
@@ -79,7 +94,11 @@ input {
 }
 
 .jumbotron {
-  color: #5f7aa0;
+  background-image: image-url('hero.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 50vh;
+  color: #e67e22;
 }
 
 .show_recipe {
